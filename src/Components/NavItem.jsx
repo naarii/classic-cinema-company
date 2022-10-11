@@ -1,7 +1,11 @@
 import React from "react";
 
-const NavBar = () => {
-    
+const NavItem = (props) => {
+    return (
+        <li className="nav-item">
+            <a>{props.text}</a>;
+        </li>
+    )
 }
 
-export default NavBar;
+export default NavItem;
