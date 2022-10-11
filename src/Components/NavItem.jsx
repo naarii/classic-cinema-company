@@ -1,10 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavItem = (props) => {
     return (
-        <li className="nav-item">
-            <a>{props.text}</a>;
-        </li>
+        <Link to={props.linkTo} className="nav-item">{props.text}</Link>
     )
 }
 

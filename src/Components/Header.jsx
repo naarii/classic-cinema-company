@@ -5,7 +5,7 @@ import cccLogo from "../images/CCC-Logo.png"
 const Header = () => {
     return (
     <nav className="chevron">
-        <li><img className="navbar-brand" src={cccLogo} /></li>
+        <img className="navbar-brand" src={cccLogo} alt="ccc_logo" />
         <NavBar />
     </nav>
     );

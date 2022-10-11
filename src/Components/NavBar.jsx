@@ -6,9 +6,9 @@ const NavBar = () => {
 
     return (
         <div className="container-fluid">
-            <NavItem text="What's On" />
-            <NavItem text="Coming Soon" />
-            <NavItem text="Sign Up" />
+            <NavItem text="What's On" linkTo="/" />
+            <NavItem text="Coming Soon" linkTo="/schedule" />
+            <NavItem text="Sign Up" linkTo="/signup" />
             <NavItem text="Your Visit" />
             <NavItem text="Book Tickets" />
         </div>
