@@ -1,12 +1,12 @@
 import React from "react";
-import HomeBanner from "../images/HomeBanner/HomeBanner.png";
+import HomeBanner from "../images/HomeBanner/HomeBanner_hmwvoh_c_scale,w_1143.png";
 import PlaceholderImg from "../images/placeholder.jpg";
-import FortropolisImg from "../images/films/fortropolis/nowshowing/fortropolis.png";
-import ThePoolImg from "../images/films/thepool/nowshowing/thepool.jpg";
-import FrancescaImg from "../images/films/francesca/nowshowing/francesca.jpg";
-import PostcardsImg from "../images/films/postcardsfromparis/nowshowing/postcardsfromparis.jpg";
-import SwampImg from "../images/films/welcometotheswamp/nowshowing/welcometotheswamp.png";
-import FleetingImg from "../images/films/fleetingbloom/nowshowing/fleetingbloom.jpg";
+import FortropolisImg from "../images/films/fortropolis/nowshowing/fortropolis_la2wkj,w200.png";
+import ThePoolImg from "../images/films/thepool/nowshowing/thepool_xopek0,w200.jpg";
+import FrancescaImg from "../images/films/francesca/nowshowing/francesca_f6fxhz,w200.jpg";
+import PostcardsImg from "../images/films/postcardsfromparis/nowshowing/postcardsfromparis_jxl3to,w200.jpg";
+import SwampImg from "../images/films/welcometotheswamp/nowshowing/welcometotheswamp_rrcpeh,w200.png";
+import FleetingImg from "../images/films/fleetingbloom/nowshowing/fleetingbloom_c02cvi,w200.jpg";
 
 const Home = ({nowShowingFilms}) => {
     const films = nowShowingFilms.map(currentFilm => {
