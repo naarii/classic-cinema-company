@@ -7,11 +7,11 @@ const Signup = (props) => {
     const [lastName, setLastName] = useState(``);
     const [email, setEmail] = useState(``);
     const [phone, setPhone] = useState(``);
-    const [dateOfBirth, setDateOfBirth] = useState(null);
+    const [dateOfBirth, setDateOfBirth] = useState(``);
     const [gender, setGender] = useState(``);
     const handleSubmit = event => {
         event.preventDefault();
-        props.submitSingUpDetails(title, firstName, lastName, email, phone, dateOfBirth, gender);
+        props.submitSignUpDetails(title, firstName, lastName, email, phone, dateOfBirth, gender);
     };
     return (
         <div>
@@ -43,9 +43,9 @@ const Signup = (props) => {
                             <input type="date" value={dateOfBirth} onChange={ event => setDateOfBirth(event.target.value) } />
                         </label><br/>
                         <label>Gender
-                            <input type="checkbox" onChange={ event => setGender(event.target.checked )} />
+                            <input type="radio" onChange={ event => setGender(event.target.checked ? "Female" : "" )} />
                             Female
-                            <input type="checkbox" />
+                            <input type="radio" onChange={ event => setGender(event.target.checked ? "Male" : "" )}/>
                             Male
                             <input id="btn-sign-up" type="submit" value="Book Now" />
                         </label>
