@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import Home from "./Home";
+import sampleFilms from '../films.json';
 
-const Content = (props) => {
-    return(<div><Home/></div>);
+const Content = () => {
+    const [films, setFilms] = useState(sampleFilms);
+    return(<div><Home nowShowingFilms={films.films}/></div>);
 }
 
 export default Content;
